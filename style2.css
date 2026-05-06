@@ -1,0 +1,473 @@
+:root {
+    --navy: #19335a;
+    --platinum: #e5e9f2;
+    --white: #ffffff;
+    --gold: #FFD700;
+    --gold-dark: #c5a200;
+    --purple: #b28dff;
+    --green: #19c37d;
+    --blue-accent: #1976d2;
+    --gray: #f7fafd;
+    --body-font: "Segoe UI", Verdana, Arial, sans-serif;
+}
+body {
+    margin: 0; padding: 0;
+    font-family: var(--body-font);
+    background: var(--gray);
+    color: var(--navy);
+}
+
+header {
+    background: var(--navy);
+    color: var(--white);
+    box-shadow: 0 2px 8px rgba(25,51,90,0.09);
+    letter-spacing: 0.1px;
+}
+.school-name {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.7rem 1.2rem;
+    border-radius: 7px;
+    transition: background 0.25s, color 0.25s;
+    font-size: 1.03rem;
+}
+nav ul li a.active,
+nav ul li a:hover {
+    background: var(--gold);
+    color: var(--navy);
+}
+
+.main-btn {
+    background: var(--blue-accent);
+    color: var(--white);
+    border: none;
+    border-radius: 20px;
+    padding: 0.8rem 2.1rem;
+    font-size: 1.09rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1.2rem;
+    box-shadow: 0 2px 8px rgba(25,51,90,0.08);
+    transition: background 0.22s, Box-shadow 0.2s, color 0.2s;
+}
+.main-btn:hover {
+    background: var(--gold-dark);
+    color: var(--white);
+}
+
+/* --- HOME Section (hero/statistics) --- */
+.home-section {
+    background: var(--platinum);
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 32px rgba(25,51,90,0.07);
+    padding-top: 2.5rem;
+    padding-bottom: 2.2rem;
+}
+.home-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.2rem;
+    justify-content: space-between;
+}
+.home-text {
+    flex: 1;
+    min-width: 250px;
+}
+.banner-imgwrap {
+    flex: 1;
+    min-width: 220px;
+    text-align: right;
+}
+.banner-imgwrap img {
+    width: 340px;
+    border-radius: 18px;
+    box-shadow: 0 6px 24px rgba(25,51,90,0.10);
+    max-width: 100%;
+}
+.home-stats {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    background: var(--white);
+    border-radius: 17px;
+    padding: 1.1rem 2rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.7rem;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 16px rgba(25,51,90,0.06);
+}
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 140px;
+    min-width: 120px;
+    max-width: 170px;
+    font-size: 1.1rem;
+    margin: 0.7rem 0;
+    background: var(--platinum);
+    border-radius: 13px;
+    padding: 1.1rem 0.7rem;
+    box-shadow: 0 2px 8px rgba(25,51,90,0.06);
+}
+.stat-icon {
+    margin-bottom: 0.6rem;
+}
+.stat-icon img {
+    width: 38px; height: 38px;
+    display: block;
+}
+.stat-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.stat-desc {
+    font-size: 0.98rem;
+    color: #5d6d7e;
+    margin-top: 0.1rem;
+}
+.navy { border-left: 6px solid var(--navy);}
+.gold { border-left: 6px solid var(--gold);}
+.green { border-left: 6px solid var(--green);}
+.purple { border-left: 6px solid var(--purple);}
+
+/* --- General Section Styling --- */
+.section-box {
+    background: var(--white);
+    margin-bottom: 2.1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 13px rgba(25,51,90,.07);
+    padding: 2.2rem 1.4rem;
+}
+h2 {
+    color: var(--navy);
+    margin-bottom: 1.1rem;
+    font-size: 2.0rem;
+}
+
+/* --- Achievements Section --- */
+.achievements-flex {
+    display: flex;
+    gap: 2.2rem;
+    flex-wrap: wrap;
+}
+.achievement-item {
+    display: flex;
+    align-items: flex-start;
+    background: var(--platinum);
+    border-radius: 11px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 6px rgba(25,51,90,0.06);
+    flex:1 1 180px;
+    min-width: 240px;
+    margin-bottom: 1rem;
+}
+.ach-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--white);
+    box-shadow: 0 3px 9px rgba(25,51,90,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+.ach-icon img { width: 30px; height: 30px;}
+.ach-icon.gold {border: 2.5px solid var(--gold);}
+.ach-icon.green {border: 2.5px solid var(--green);}
+.ach-icon.purple {border: 2.5px solid var(--purple);}
+.ach-content strong {
+    font-size: 1.1rem;
+}
+
+/* --- Courses Section --- */
+.courses-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.course-card {
+    background: var(--platinum);
+    flex: 1 1 220px;
+    padding: 1.3rem;
+    border-radius: 11px;
+    box-shadow: 0 2px 7px rgba(25,51,90,0.10);
+    min-width: 180px;
+    max-width: 290px;
+    border-left: 4px solid var(--blue-accent);
+    transition: box-shadow 0.21s, border 0.2s;
+}
+.course-card:hover {
+    box-shadow: 0 6px 17px rgba(25,51,90,0.13);
+    border-left: 4px solid var(--gold);
+}
+.course-title {
+    font-size: 1.13rem;
+    color: var(--navy);
+    margin-bottom: 0.7rem;
+    font-weight: 550;
+}
+
+/* --- Faculty Section --- */
+.faculty-flex {
+    display: flex;
+    gap: 2.2rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.faculty-card {
+    background: var(--platinum);
+    border-radius: 13px;
+    box-shadow: 0 2px 12px rgba(25,51,90,0.10);
+    min-width: 210px;
+    max-width: 290px;
+    flex:1 1 180px;
+    padding:1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.1rem;
+}
+.faculty-card img {
+    width: 90px; height:90px;
+    border-radius: 999px;
+    object-fit:cover;
+    margin-bottom: 0.7rem;
+    border: 4px solid var(--gold);
+    box-shadow: 0 0 0 2px var(--white);
+}
+.faculty-info {
+    text-align: center;
+    font-size: 1.04rem;
+}
+.faculty-info i { font-size: 0.98rem; color: var(--navy); }
+
+/* --- Teachers' Works --- */
+.researches {
+    margin-top: 0.6rem;
+}
+.research-item {
+    background: var(--platinum);
+    border-radius: 8px;
+    padding: 1rem 1rem 0.6rem 1rem;
+    box-shadow: 0 2px 7px rgba(25,51,90,0.09);
+    margin-bottom: 1.1rem;
+}
+.tag {
+    display:inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    border-radius: 5px;
+    font-size: 0.86rem;
+    padding: 0.2rem 0.6rem;
+    margin-left:0.6rem;
+    margin-right:0.2rem;
+}
+.tag.green { background: var(--green); color: var(--white);}
+.tag.purple{background:var(--purple); color:var(--white);}
+
+/* --- Toppers --- */
+.toppers-flex {
+    display:flex;
+    gap:2.1rem;
+    flex-wrap:wrap;
+}
+.topper-card {
+    background: var(--platinum);
+    border-radius: 13px;
+    box-shadow: 0 2px 12px rgba(191, 140, 25, 0.12);
+    flex: 1 1 150px;
+    min-width: 160px;
+    max-width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem;
+    margin-bottom:1.1rem;
+    border-bottom:5px solid var(--gold);
+    transition:border-bottom 0.23s;
+}
+.topper-card img {
+    width: 70px; height: 70px;
+    border-radius: 999px;
+    object-fit:cover;
+    margin-bottom: 0.6rem;
+    border: 3px solid var(--gold);
+}
+.topper-info {
+    text-align: center;
+    font-size: 1.06rem;
+}
+.topper-info span {
+    color: var(--navy);
+    font-size: 0.99rem;
+}
+
+/* --- Student Achievements --- */
+.students-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: flex-start;
+    margin-top: 1.6rem;
+}
+.student-box {
+    min-width: 160px;
+    max-width: 250px;
+    flex: 1 1 170px;
+    background: var(--white);
+    color: var(--navy);
+    border-radius: 11px;
+    box-shadow: 0 2px 7px rgba(25,51,90, 0.13);
+    padding: 1.2rem 0.9rem;
+    font-size: 1.03rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:1.1rem;
+}
+.student-box img {
+    width: 56px; height: 56px;
+    border-radius:999px;
+    object-fit:cover;
+    margin-bottom:0.6rem;
+    border: 3px solid var(--blue-accent);
+}
+.student-box span {
+    display:block;
+    margin-top:0.3rem;
+    font-size:0.96rem;
+    color:#607082;
+}
+.student-box:hover {
+    transform: scale(1.045);
+    box-shadow: 0 6px 22px rgba(25,51,90,0.14);
+}
+
+/* --- Contact --- */
+#contact form {
+    max-width: 410px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#contact label {
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    color: var(--navy);
+}
+#contact input, #contact textarea {
+    padding: 0.7rem;
+    font-size: 1.08rem;
+    border: 1px solid var(--platinum);
+    border-radius: 8px;
+    resize: none;
+    background: #fcfeff;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(25,51,90,0.04);
+    transition: border 0.2s;
+}
+#contact input:focus, #contact textarea:focus {
+    border: 1.8px solid var(--blue-accent);
+}
+#contact button[type="submit"] {
+    margin-top: 0.6rem;
+    background: var(--navy);
+    color: var(--gold);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.05rem;
+    font-weight: 500;
+    transition: background 0.3s, color 0.2s, box-shadow 0.2s;
+}
+#contact button[type="submit"]:hover {
+    background: var(--gold-dark);
+    color: var(--white);
+}
+.error-message {
+    color: #e63939;
+    font-size: 0.98rem;
+    margin-top: -0.4rem;
+    margin-bottom: -0.5rem;
+}
+
+/* --- Footer --- */
+footer {
+    background: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 1.6rem 0 1.35rem 0;
+    font-size: 1rem;
+    margin-top: 2.5rem;
+    border-radius: 15px 15px 0 0;
+}
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.footer-links a {
+    color: var(--gold);
+    text-decoration: none;
+    margin: 0 4px;
+    font-weight:500;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+    color: var(--white);
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 1050px) {
+    .home-stats { flex-wrap: wrap; gap: 1rem;}
+    .courses-list, .faculty-flex, .achievements-flex, .toppers-flex, .students-wrapper  {gap:1rem;}
+    .home-content { flex-direction: column; align-items: flex-start; }
+    .banner-imgwrap {text-align: left;}
+    .section-box {padding:1.2rem 0.6rem;}
+}
+@media (max-width:700px) {
+    .container { padding:0 0.4rem;}
+    .section-box {padding:1.4rem 0.2rem;}
+    .nav-flex { flex-direction: column;align-items: flex-start; }
+    nav ul { flex-direction: column; align-items: flex-start; gap:0.4rem;}
+    .school-name { font-size: 1.3rem;}
+    .home-content {flex-direction: column;}
+    .banner-imgwrap {text-align: left;}
+    .home-stats, .courses-list, .achievements-flex, .faculty-flex, .toppers-flex, .students-wrapper {
+        flex-direction: column;
+        gap:1rem;
+        align-items: stretch;
+    }
+    .banner-imgwrap img {width:100%;}
+    .topper-card, .faculty-card, .student-box, .stat-box, .course-card, .achievement-item {max-width:99%;}
+}   

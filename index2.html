@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluecrest International School</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container nav-flex">
+            <span class="school-name">Bluecrest International School</span>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#faculty">Master Faculty</a></li>
+                    <li><a href="#toppers">Toppers</a></li>
+                    <li><a href="#teacherswork">Teachers' Research</a></li>
+                    <li><a href="#students">Students</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ======= HOME ======= -->
+    <section id="home" class="container home-section">
+        <div class="home-content">
+            <div class="home-text">
+                <h1>Welcome to Bluecrest International School</h1>
+                <p>
+                    <strong>Empowering Excellence • Inspiring Futures</strong><br />
+                    Pursue world-class academics with guidance from outstanding faculty.<br>
+                    From STEM to the arts, we nurture every child to be a leader and creative thinker.<br>
+                </p>
+                <button id="welcome-btn" class="main-btn">Show Welcome Message</button>
+                <div id="welcome-message" class="welcome-message" style="display:none;"></div>
+            </div>
+            <div class="banner-imgwrap">
+                <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=700&q=80" alt="School banner">
+            </div>
+        </div>
+        <div class="home-stats">
+            <div class="stat-box navy">
+                <div class="stat-icon"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135731.png" alt="students" /></div>
+                <div class="stat-title">1200+</div>
+                <div class="stat-desc">Students</div>
+            </div>
+            <div class="stat-box gold">
+                <div class="stat-icon"><img src="https://cdn-icons-png.flaticon.com/512/3207/3207969.png" alt="exams" /></div>
+                <div class="stat-title">98.6%</div>
+                <div class="stat-desc">Pass Rate</div>
+            </div>
+            <div class="stat-box green">
+                <div class="stat-icon"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077976.png" alt="clubs" /></div>
+                <div class="stat-title">18</div>
+                <div class="stat-desc">Active Clubs</div>
+            </div>
+            <div class="stat-box purple">
+                <div class="stat-icon"><img src="https://cdn-icons-png.flaticon.com/512/3703/3703251.png" alt="awards" /></div>
+                <div class="stat-title">52</div>
+                <div class="stat-desc">National Awards</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container section-box">
+        <h2>About Us</h2>
+        <p>
+            Bluecrest International School stands as a beacon of academic distinction, innovative teaching, and holistic development. Since 1988, we have championed inclusive education, equipping young people with the ambition and tools to reach global heights.
+        </p>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="container section-box">
+        <h2>Achievements</h2>
+        <div class="achievements-flex">
+            <div class="achievement-item">
+                <div class="ach-icon gold"><img src="https://cdn-icons-png.flaticon.com/512/766/766252.png" alt="medal"></div>
+                <div class="ach-content">
+                    <strong>International Math Olympiad - Top 5 (2025)</strong>
+                    <p>Ranked among the world's top 5 schools in the latest International Math Olympiad with 7 students in top 100.</p>
+                </div>
+            </div>
+            <div class="achievement-item">
+                <div class="ach-icon green"><img src="https://cdn-icons-png.flaticon.com/512/1127/1127985.png" alt="environment"></div>
+                <div class="ach-content">
+                    <strong>Green School Award (2024)</strong>
+                    <p>Awarded for sustainable campus initiatives and community eco-projects.</p>
+                </div>
+            </div>
+            <div class="achievement-item">
+                <div class="ach-icon purple"><img src="https://cdn-icons-png.flaticon.com/512/2317/2317992.png" alt="robotics"></div>
+                <div class="ach-content">
+                    <strong>CodeFest Robotics 1<sup>st</sup> Place</strong>
+                    <p>Winners at the Inter-school Robotics Championship for 3 consecutive years (2023-2025).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COURSES SECTION -->
+    <section id="courses" class="container section-box">
+        <h2>Our Courses</h2>
+        <div class="courses-list">
+            <div class="course-card">
+                <div class="course-title">Mathematics</div>
+                <div>
+                    Develop analytical and problem-solving skills from foundational concepts to advanced calculus and statistics.
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-title">Science & Technology</div>
+                <div>
+                    Laboratory-driven learning in Physics, Chemistry, Biology, and Computer Science with AI and Robotics modules.
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-title">Arts & Humanities</div>
+                <div>
+                    Dive into literature, history, philosophy, visual and performing arts with a global perspective.
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-title">Business & Economics</div>
+                <div>
+                    Case-based business studies, economics, and entrepreneurship taught by industry-linked experts.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MASTER FACULTY -->
+    <section id="faculty" class="container section-box">
+        <h2>Master Faculty</h2>
+        <div class="faculty-flex">
+            <div class="faculty-card">
+                <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="Dr. John Patterson" />
+                <div class="faculty-info">
+                    <strong>Dr. John Patterson</strong><br>
+                    <i>Mathematics HOD, PhD (MIT)</i>
+                    <p>Renowned for advanced problem-solving and a mentor to international Olympiad teams.</p>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Ms. Sunita Roy" />
+                <div class="faculty-info">
+                    <strong>Ms. Sunita Roy</strong><br>
+                    <i>Science Faculty, M.Sc Ed (Stanford)</i>
+                    <p>Expert in project-based STEM education and leader in robotics and AI modules.</p>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Mr. David Kenney" />
+                <div class="faculty-info">
+                    <strong>Mr. David Kenney</strong><br>
+                    <i>Social Sciences Faculty</i>
+                    <p>Known for dynamic history and humanities classes recognized nationwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEACHERS' WORK -->
+    <section id="teacherswork" class="container section-box">
+        <h2>Teachers' Research & Publications</h2>
+        <div class="researches">
+            <div class="research-item">
+                <strong>Dr. John Patterson</strong> <span class="tag">Pure Mathematics</span>
+                <p>“Recent Advances in Number Theory” – <i>Published in Journal of Mathematics, 2025.</i></p>
+            </div>
+            <div class="research-item">
+                <strong>Ms. Sunita Roy</strong> <span class="tag green">STEM Education</span>
+                <p>“AI for School Students” Workshop Facilitator, IEA Education Conference 2024.</p>
+            </div>
+            <div class="research-item">
+                <strong>Mr. David Kenney</strong> <span class="tag purple">Social Impact</span>
+                <p>Co-author, “Modern Civics Curriculum for High Schools”, awarded by UNESCO, 2023.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOPPERS SECTION -->
+    <section id="toppers" class="container section-box">
+        <h2>Our Recent Toppers</h2>
+        <div class="toppers-flex">
+            <div class="topper-card">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sonia Mehra">
+                <div class="topper-info">
+                    <strong>Sonia Mehra</strong><br>
+                    <span>97.8% CBSE, 2025</span>
+                </div>
+            </div>
+            <div class="topper-card">
+                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Ajay Rathi">
+                <div class="topper-info">
+                    <strong>Ajay Rathi</strong><br>
+                    <span>99/100 Math Olympiad, 2025</span>
+                </div>
+            </div>
+            <div class="topper-card">
+                <img src="https://randomuser.me/api/portraits/men/97.jpg" alt="Markus Patel">
+                <div class="topper-info">
+                    <strong>Markus Patel</strong><br>
+                    <span>1st Rank, Robotics Fest</span>
+                </div>
+            </div>
+            <div class="topper-card">
+                <img src="https://randomuser.me/api/portraits/women/66.jpg" alt="Hanna Schmitt">
+                <div class="topper-info">
+                    <strong>Hanna Schmitt</strong><br>
+                    <span>Gold, Science Quiz 2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STUDENTS SECTION -->
+    <section id="students" class="container section-box">
+        <h2>Student Achievements & Leadership</h2>
+        <div class="students-wrapper">
+            <div class="student-box">
+                <img src="https://randomuser.me/api/portraits/women/27.jpg" alt="Sarah Lee">
+                <div>
+                    <strong>Sarah Lee</strong><br>
+                    President, Eco Club<br>
+                    <span>Initiated GreenEarth Drive, planting 500+ trees.</span>
+                </div>
+            </div>
+            <div class="student-box">
+                <img src="https://randomuser.me/api/portraits/men/16.jpg" alt="Amir Husain">
+                <div>
+                    <strong>Amir Husain</strong><br>
+                    Math Olympiad Gold<br>
+                    <span>Represented India at IMO, 2025; scored 2nd globally.</span>
+                </div>
+            </div>
+            <div class="student-box">
+                <img src="https://randomuser.me/api/portraits/women/54.jpg" alt="Priya Singh">
+                <div>
+                    <strong>Priya Singh</strong><br>
+                    Art Society Lead<br>
+                    <span>Curated national art exhibition for young artists, 2024.</span>
+                </div>
+            </div>
+            <div class="student-box">
+                <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="Alex Chen">
+                <div>
+                    <strong>Alex Chen</strong><br>
+                    Robotics Team Captain<br>
+                    <span>Built AI-driven rover, won CodeFest 2025.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="container section-box">
+        <h2>Contact Us</h2>
+        <form id="contact-form" novalidate>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" />
+                <div id="name-error" class="error-message"></div>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" />
+                <div id="email-error" class="error-message"></div>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+                <div id="message-error" class="error-message"></div>
+            </div>
+            <button type="submit" class="main-btn">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <div class="container footer-content">
+            © 2026 Bluecrest International School &bullet; All rights reserved.<br>
+            <span class="footer-links">
+                <a href="#home">Home</a> |
+                <a href="#about">About</a> | 
+                <a href="#achievements">Achievements</a> |
+                <a href="#faculty">Master Faculty</a> | 
+                <a href="#contact">Contact</a>
+            </span>
+        </div>
+    </footer>
+    <script src="app2.js"></script>
+</body>
+</html>
